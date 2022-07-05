@@ -5,3 +5,6 @@
 regression.*
 *.o
 *.so
+/.vs
+/x64/Release
+*.user

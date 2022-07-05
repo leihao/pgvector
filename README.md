@@ -35,7 +35,7 @@
 
 ### 代码微调（项目全文替换）
 1. PG_FUNCTION_INFO_V1 前添加 PGDLLEXPORT
-2. void _PG_init 前添加 PGDLLEXPORT extern
+2. void _PG_init 前添加 PGDLLEXPORT
 
 ### 构建插件库
 1. 选择Release、X64，生成解决方案。生成vector.dll文件。

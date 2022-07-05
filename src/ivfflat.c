@@ -18,6 +18,7 @@ static relopt_kind ivfflat_relopt_kind;
 /*
  * Initialize index options and variables
  */
+PGDLLEXPORT
 void
 _PG_init(void)
 {
@@ -164,7 +165,7 @@ ivfflatvalidate(Oid opclassoid)
  *
  * See https://www.postgresql.org/docs/current/index-api.html
  */
-PG_FUNCTION_INFO_V1(ivfflathandler);
+PGDLLEXPORT PG_FUNCTION_INFO_V1(ivfflathandler);
 Datum
 ivfflathandler(PG_FUNCTION_ARGS)
 {
